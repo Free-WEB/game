@@ -266,6 +266,7 @@ $(document).ready(function(){
         }
     );
     rateSetBlockElems.click(function () {
+        $('.rate-error').hide();
         let indexEl = rateSetBlockElems.index($(this));
         rateSetBlockElems.each(function() {
             if($(".rate-set-block span").index($(this)) <= indexEl){
@@ -290,16 +291,29 @@ $(document).ready(function(){
         $(id1).fadeOut(300);
         $(id2).fadeIn(300);
     }
-    $('#shadow, .pop-up-close, .review-set-but, .review-cancel-but').click(function () {
+    $('#shadow, .pop-up-close, .review-cancel-but').click(function () {
         $('#shadow, .pop-up').fadeOut(300);
     });
 
-    $('.rate-but').click(function () {
+    $('.review-set-but').click(function () {
+        if($('.review-pop-up-value').val().length === 0){
+            $('.review-error').show();
+        } else {
+            $('.review-error').hide();
+            $('#shadow, .pop-up').fadeOut(300);
+        }
+    });
+
+    $('.rate-but, .add-reviews-but').click(function () {
         openPopUp("#rate-pop-up");
     });
 
     $('.rate-set-but').click(function () {
-        changePopUp("#rate-pop-up", "#review-pop-up");
+        if($(".rate-set-block .selected-star").length > 0){
+            changePopUp("#rate-pop-up", "#review-pop-up");
+        } else {
+            $('.rate-error').show();
+        }
     });
 
     $('.content-desc-more').click(function () {

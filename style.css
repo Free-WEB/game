@@ -1140,19 +1140,38 @@ ul{
     position: static;
 }
 #game-screens-carousel .flex-direction-nav a {
-    padding-left: 11px;
-    height: 18px;
-    background: url(img/icons/s-h-arr.svg) 0 0 no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    left: 7px;
+    padding-left: 17px;
+    height: 100%;
+    background: url(img/icons/s-h-arr.svg) center center no-repeat;
+    -webkit-background-size: 11px auto;
+    background-size: 11px auto;
+    left: 4px;
     bottom: auto;
-    top: 50%;
-    margin-top: -9px;
+    top: 0;
 }
 #game-screens-carousel .flex-direction-nav .flex-nav-next a {
     left: auto;
-    right: 7px;
+    right: 4px;
+}
+#game-screens-carousel .flex-direction-nav a.flex-disabled{
+    display: block;
+    opacity: .5;
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+}
+.rate-error{
+    font-size: 12px;
+    color: #ff6060;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.rate-error span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
 }
 
 
@@ -1524,17 +1543,16 @@ ul{
     position: relative;
 }
 #single-head-carousel .flex-direction-nav a{
-    padding-left: 8px;
-    height: 12px;
-    background: url(img/icons/s-h-arr.svg) 0 0 no-repeat;
-    left: -23px;
+    padding-left: 16px;
+    height: 100%;
+    background: url(img/icons/s-h-arr.svg) center center no-repeat;
+    left: -27px;
     bottom: auto;
-    top: 50%;
-    margin-top: -6px;
+    top: 0;
 }
 #single-head-carousel .flex-direction-nav .flex-nav-next a{
     left: auto;
-    right: -23px;
+    right: -27px;
 }
 #single-head-slider.flexslider .slides img{
     height: 215px;
@@ -1543,6 +1561,13 @@ ul{
 #single-head-carousel.flexslider .slides img{
     height: 52px;
     object-fit: cover;
+}
+#single-head-carousel .flex-direction-nav a.flex-disabled{
+    display: block;
+    opacity: .5;
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
 }
 .rate-row{
     display: flex;
@@ -2031,13 +2056,25 @@ textarea.review-pop-up-value:-ms-input-placeholder {
 textarea.review-pop-up-value::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
+.review-pop-up-info{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
 .review-field-counter{
+    width: 50%;
     text-align: right;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 8px;
+}
+.review-error{
+    width: 50%;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ff6060;
+    display: none;
 }
 .review-pop-up-buts-row{
     display: flex;
@@ -2056,6 +2093,21 @@ textarea.review-pop-up-value::-ms-input-placeholder {
     color: #2C88F4;
     margin-left: 28px;
     cursor: pointer;
+}
+.add-reviews-but{
+    width: 140px;
+    margin: 0 auto 12px;
+}
+.no-reviews-block{
+    max-width: 400px;
+    padding: 20px 30px 8px;
+    background: rgba(26, 38, 50, 0.5);
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.no-reviews-text{
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 
