@@ -222,7 +222,7 @@ $(document).ready(function(){
 
     let searchField = $(".main-search");
 
-    if(searchField.val().length > 0){
+    if(searchField.length > 0 && searchField.val().length > 0){
         $(".main-search-reset").show();
     }
 
