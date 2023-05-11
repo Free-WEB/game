@@ -2892,7 +2892,7 @@ html[xmlns] .flexslider .slides {
 .steam-synchronization-pop-up{
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 32px;
     background: #1A2632;
     border: 1px solid #FFFFFF;
     border-radius: 12px;
