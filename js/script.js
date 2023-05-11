@@ -449,4 +449,8 @@ $(document).ready(function(){
         });
     });
 
+    $('.steam-synchronization-close').click(function () {
+        $(this).parent().hide();
+    });
+
 });

@@ -2884,6 +2884,65 @@ html[xmlns] .flexslider .slides {
 }
 
 
+/* synchronization */
+
+.menu{
+    position: relative;
+}
+.steam-synchronization-pop-up{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #1A2632;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    width: 192px;
+    z-index: 1;
+}
+.steam-synchronization-close{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    background: #303D4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.steam-synchronization-close img{
+    display: block;
+    width: 10px;
+    height: auto;
+}
+.steam-synchronization-block{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.steam-synchronization-h{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #303d4f;
+    padding: 6px 12px;
+}
+.steam-synchronization-text{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 6px 12px;
+}
+.steam-synchronization-text p{
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 /********* АДАПИВ **********/
@@ -4119,6 +4178,42 @@ html[xmlns] .flexslider .slides {
         text-align: left;
         padding: 24px 0 0;
         background: transparent;
+    }
+    .steam-synchronization-pop-up{
+        position: relative;
+        top: 0;
+        width: 100%;
+        border: none;
+        padding: 0 6px;
+    }
+    .steam-synchronization-h,
+    .steam-synchronization-text{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .steam-synchronization-text p{
+        margin-bottom: 12px;
+    }
+    .steam-synchronization-text p:last-child{
+        margin: 0;
+    }
+    .steam-synchronization-h{
+        font-size: 13px;
+        line-height: 15px;
+        padding-right: 38px;
+    }
+    .steam-synchronization-text{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .steam-synchronization-close{
+        width: 32px;
+        height: 32px;
+        top: 5px;
+        right: 6px;
+    }
+    .steam-synchronization-close img{
+        width: 12px;
     }
 
 }
