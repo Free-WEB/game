@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1104">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Акции</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -23,6 +23,28 @@
                 <img src="img/logo.png" alt="">
                 <span>Game Hunters</span>
             </a>
+            <div class="mob-nav">
+                <div class="mob-lng-block">
+                    <div class="mob-lng-but">RU</div>
+                    <ul class="mob-lng-list">
+                        <li><a data-val="EN" href="">English</a></li>
+                        <li><a data-val="RU" href="">Русский</a></li>
+                        <li><a data-val="CN" href="">简体中文</a></li>
+                    </ul>
+                </div>
+                <div class="mob-lng-block">
+                    <div class="mob-lng-but">RU</div>
+                    <ul class="mob-lng-list">
+                        <li><a data-val="EN" href="">EN</a></li>
+                        <li><a data-val="RU" href="">RU</a></li>
+                        <li><a data-val="CN" href="">CN</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-but">
+                    <img src="img/icons/menu-open.svg" alt="" class="mob-menu-open">
+                    <img src="img/icons/menu-close.svg" alt="" class="mob-menu-close">
+                </div>
+            </div>
             <nav class="menu">
                 <ul class="menu-list">
                     <li>
@@ -312,8 +334,9 @@
             <div class="content-desc" id="game-reviews">
                 <h2 class="content-desc-h">Отзывы</h2>
                 <div class="no-reviews-block">
-                    <div class="no-reviews-text">Ещё никто не написал отзыв. Будьте первым!</div>
-                    <div class="add-reviews-but but">Оставить отзыв</div>
+                    <div class="no-reviews-img"><img src="img/icons/profile-img.png" alt=""></div>
+                    <div class="no-reviews-text">Ещё никто не написал отзыв.<br>Будьте первым!</div>
+                    <div class="add-reviews-but but">+ Оставить отзыв</div>
                 </div>
             </div>
         </div>
@@ -388,7 +411,7 @@
         <span></span>
         <span></span>
     </div>
-    <div class="rate-error"><span>Нажмите на звёздочки для оценки</span></div>
+    <div class="rate-error"><span><img src="img/icons/prompt.svg" alt="">Нажмите на звёздочки для оценки</span></div>
     <div class="rate-set-but but">Оценить</div>
 </div>
 
@@ -401,13 +424,49 @@
             <textarea class="review-pop-up-value" placeholder="Ваш отзыв" maxlength="2000"></textarea>
         </div>
         <div class="review-pop-up-info">
-            <div class="review-error">Требуется ввести текст отзыва</div>
+            <div class="review-error"><img src="img/icons/prompt.svg" alt="">Требуется ввести текст отзыва</div>
             <div class="review-field-counter"><span>0</span> из 2000</div>
         </div>
     </div>
     <div class="review-pop-up-buts-row">
         <div class="review-set-but but">Оставить отзыв</div>
         <div class="review-cancel-but">Пропустить</div>
+    </div>
+</div>
+
+
+<div id="review-published-pop-up" class="pop-up">
+    <div class="pop-up-close"><img src="img/icons/close-slider.svg" alt=""></div>
+    <div class="pop-up-img"><img src="img/icons/like-y.png" alt=""></div>
+    <div class="pop-up-h">Отзыв опубликован!</div>
+    <div class="review-published-text">Вы можете изменить его в течение 24 часов.</div>
+    <div class="review-published-but but">Ура!</div>
+</div>
+
+
+<div id="review-save-pop-up" class="pop-up">
+    <div class="pop-up-close"><img src="img/icons/close-slider.svg" alt=""></div>
+    <div class="pop-up-img"><img src="img/icons/like-y.png" alt=""></div>
+    <div class="pop-up-h">Отзыв сохранен</div>
+    <div class="review-published-but but">ОК</div>
+</div>
+
+
+<div id="share-pop-up" class="pop-up">
+    <div class="share-pop-up-h">Поделиться скидкой</div>
+    <div class="share-pop-up-soc-list">
+        <a href="" class="share-pop-up-soc"><img src="img/icons/soc-icon-1.svg" alt=""></a>
+        <a href="" class="share-pop-up-soc"><img src="img/icons/soc-icon-2.svg" alt=""></a>
+        <a href="" class="share-pop-up-soc"><img src="img/icons/soc-icon-3.svg" alt=""></a>
+    </div>
+</div>
+
+
+<div id="hide-game-pop-up" class="pop-up">
+    <div class="hide-game-pop-up-h">Скрытие игр доступно только после авторизации в профиле</div>
+    <div class="hide-game-pop-up-buts">
+        <div class="hide-game-pop-up-ok">Понятно</div>
+        <a href="" class="hide-game-pop-up-login">Войти</a>
     </div>
 </div>
 
@@ -452,12 +511,33 @@
 
 <div class="mob-ban-block">
     <div class="mob-ban">
-        <img src="img/mob/close.svg" alt="" class="mob-ban-close">
-        <div class="mob-ban-ico"><img src="img/mob/ico.png" alt=""></div>
+        <div class="mob-ban-close">
+            <img src="img/icons/close-slider.svg" alt="">
+        </div>
         <div class="mob-ban-h">В приложении быстрее и лучше</div>
         <a href="#" class="mob-ban-link">Скачать</a>
     </div>
 </div>
+
+
+<div id="mob-gallery-block">
+    <div class="mob-gallery-shadow"></div>
+    <div id="mob-gallery-slider" class="flexslider">
+        <ul class="slides">
+            <li><img src="img/slides/1.jpg" alt=""></li>
+            <li><img src="img/slides/2.jpg" alt=""></li>
+            <li><img src="img/slides/3.jpg" alt=""></li>
+            <li><img src="img/slides/4.jpg" alt=""></li>
+            <li><img src="img/slides/5.jpg" alt=""></li>
+            <li><img src="img/slides/1.jpg" alt=""></li>
+            <li><img src="img/slides/2.jpg" alt=""></li>
+            <li><img src="img/slides/3.jpg" alt=""></li>
+            <li><img src="img/slides/4.jpg" alt=""></li>
+            <li><img src="img/slides/5.jpg" alt=""></li>
+        </ul>
+    </div>
+</div>
+
 
 
 <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>

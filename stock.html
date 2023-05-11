@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -81,163 +79,99 @@
 </header>
 
 
-<div class="back-block">
-    <div class="small-content">
-        <div class="back-block-line">
-            <a href="#" class="back-but">Назад</a>
+<div class="main-sort-block">
+    <div class="content">
+        <div class="main-sort-wrap">
+            <div class="main-sort-radio">
+                <input type="radio" name="sort" id="sort-1" value="Активные" checked>
+                <label for="sort-1">Активные</label>
+            </div>
+            <div class="main-sort-radio">
+                <input type="radio" name="sort" id="sort-2" value="Прошедшие">
+                <label for="sort-2">Прошедшие</label>
+            </div>
+            <div class="main-sort-radio">
+                <input type="radio" name="sort" id="sort-3" value="Все">
+                <label for="sort-3">Все</label>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div class="breadcrumbs-wrap">
-    <div class="small-content">
-        <ul class="breadcrumbs breadcrumbs-single">
+<div class="breadcrumbs-wrap breadcrumbs-wrap-main">
+    <div class="content">
+        <ul class="breadcrumbs">
             <li><a href="">Главная</a></li>
             <li><a href="">Акции</a></li>
-            <li><a href="">1 час бесплатной игры на Playkey.net</a></li>
         </ul>
     </div>
 </div>
 
 
 <div class="content-wrap">
-    <div class="page-content small-content">
+    <div class="page-content content">
 
         <div class="main-val">
-            <div class="stock-single-cont">
-                <div class="stock-single-info">
-                    <h1 class="stock-single-h">1 час бесплатной игры <br>на Playkey.net</h1>
-                    <div class="stock-single-list-single">
-                        <div class="stock-single-list">
-                            <div class="stock-single-item">
-                                <div class="stock-single-item-name">опубликовано</div>
-                                <div class="stock-single-item-val">2020-02-27</div>
-                            </div>
-                            <div class="stock-single-item">
-                                <div class="stock-single-item-name">активно до</div>
-                                <div class="stock-single-item-val">2020-03-02</div>
-                            </div>
-                            <div class="stock-single-item">
-                                <div class="stock-single-item-name">статус акции</div>
-                                <div class="stock-single-item-val">Активная</div>
-                            </div>
-                            <div class="stock-single-item">
-                                <div class="stock-single-item-name">платформа</div>
-                                <div class="stock-single-item-val">Другое</div>
-                            </div>
-                            <div class="stock-single-item">
-                                <div class="stock-single-item-name">тип акции</div>
-                                <div class="stock-single-item-val">Промо</div>
-                            </div>
+            <div class="main-val-list">
+                <div class="main-val-item">
+                    <div class="game-stock-img game-img"><img src="img/thumb/1.jpg" alt=""></div>
+                    <div class="game-stock-title game-title">Playerunknown’s Battlegrounds</div>
+                    <div class="game-stock-info-wrap">
+                        <div class="game-stock-date">
+                            <div class="game-stock-date-top">Steam</div>
+                            <div class="game-stock-date-bot">2020-08-28</div>
+                        </div>
+                        <div class="game-stock-info">Free Weekend</div>
+                        <div class="game-stock-but-wrap">
+                            <a href="#" class="game-stock-but">активная</a>
                         </div>
                     </div>
                 </div>
-                <img class="stock-single-img" src="img/single-img.jpg" alt="">
-            </div>
-            <div class="page-nav-wrap">
-                <div class="page-nav-block">
-                    <ul class="page-nav">
-                        <li><a href="#stock-manual">Как получить</a></li>
-                        <li><a href="#about-game">Об игре</a></li>
-                        <li><a href="#game-req">Системные требования</a></li>
-                        <li><a href="#game-screens">Скриншоты</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="stock-manual-cont" id="stock-manual">
-                <div class="stock-manual-desk">
-                    <div class="stock-manual-h">Как получить</div>
-                    <div class="stock-manual-text">
-                        <p>В EGS раздают MORDHAU — это весьма недурный сетевой средневековый слэшер. Лучшие времена игры уже давно прошли, онлайн оставляет желать лучшего, но, возможно, раздача как-то расшевелит её.<br><br>
-                            1. Входим под своим аккаунтом и жмем “Получить”.<br>
-                            2. Появится окно с заказом, сумма которого должна составлять ₽0.00.<br>
-                            3. Жмем "Оформить заказ" и вуаля!</p>
+                <div class="main-val-item">
+                    <div class="game-stock-img game-img"><img src="img/thumb/2.jpg" alt=""></div>
+                    <div class="game-stock-title game-title">Horizon Zero Dawn Complete Edition</div>
+                    <div class="game-stock-info-wrap">
+                        <div class="game-stock-date">
+                            <div class="game-stock-date-top">Steam</div>
+                            <div class="game-stock-date-bot">2020-08-28</div>
+                        </div>
+                        <div class="game-stock-info">Freebies</div>
+                        <div class="game-stock-but-wrap">
+                            <a href="#" class="game-stock-but game-stock-but-end">закончилась</a>
+                        </div>
                     </div>
                 </div>
-                <div class="stock-manual-buts">
-                    <button class="stock-code-copy" data-promo="FREE1HOUR">КОПИРОВАТЬ КОД</button>
-                    <a href="#" class="stock-link">Перейти к акции</a>
-                </div>
-            </div>
-            <div class="content-desc" id="about-game">
-                <h2 class="content-desc-h">Об игре Horizon Zero Dawn Complete Edition</h2>
-                <div class="content-video-wrap">
-                    <video width="760" height="428"
-                           controls
-                           poster="img/video-prev.jpg"
-                           class="video-js vjs-big-play-centered"
-                           data-setup="{}">
-                        <source src="img/horizonzero.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <h3>Earth is Ours No More</h3>
-                <p>Experience Aloy’s entire legendary quest to unravel the mysteries of a world ruled by deadly Machines.</p>
-                <p>An outcast from her tribe, the young hunter fights to uncover her past, discover her destiny… and stop a catastrophic threat to the future.Unleash devastating, tactical attacks against unique Machines and rival tribes as you explore an open world teeming with wildlife and danger.</p>
-                <p>Horizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, featuring new lands, skills, weapons and Machines.</p>
-                <h3>Includes:</h3>
-                <ul>
-                    <li>Horizon Zero Dawn</li>
-                    <li>The Frozen Wilds expansion</li>
-                    <li>Carja Storm Ranger Outfit and Carja Mighty Bow</li>
-                    <li>Carja Trader Pack</li>
-                    <li>Banuk Trailblazer Outfit and Banuk Culling Bow</li>
-                    <li>Banuk Traveller Pack</li>
-                    <li>Nora Keeper Pack</li>
-                    <li>Digital art book</li>
-                </ul>
-                <span class="content-desc-more">Подробнее</span>
-                <div class="content-desc-hide">
-                    <p>Experience Aloy’s entire legendary quest to unravel the mysteries of a world ruled by deadly Machines.</p>
-                    <p>An outcast from her tribe, the young hunter fights to uncover her past, discover her destiny… and stop a catastrophic threat to the future.Unleash devastating, tactical attacks against unique Machines and rival tribes as you explore an open world teeming with wildlife and danger.</p>
-                    <p>Horizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, featuring new lands, skills, weapons and Machines.</p>
-                </div>
-            </div>
-            <div class="content-desc" id="game-req">
-                <h2 class="content-desc-h">Системные требования</h2>
-                <ul>
-                    <li>64-разрядные процессор и операционная система</li>
-                    <li>ОС: Windows 10 64-bits.</li>
-                    <li>Процессор: Intel Core i5-2500K@3.3GHz or AMD FX 6300@3.5GHz.</li>
-                    <li>Оперативная память: 8 GB ОЗУ</li>
-                    <li>Видеокарта: Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4GB)</li>
-                    <li>DirectX: Версии 12.</li>
-                    <li>Место на диске: 100 GB</li>
-                </ul>
-            </div>
-            <div class="content-desc" id="game-screens">
-                <h2 class="content-desc-h">Скриншоты</h2>
-                <div class="game-screens-cont">
-                    <div id="game-screens-slider" class="flexslider">
-                        <ul class="slides">
-                            <li><img src="img/slides/1.jpg" alt=""></li>
-                            <li><img src="img/slides/2.jpg" alt=""></li>
-                            <li><img src="img/slides/3.jpg" alt=""></li>
-                            <li><img src="img/slides/4.jpg" alt=""></li>
-                            <li><img src="img/slides/5.jpg" alt=""></li>
-                            <li><img src="img/slides/1.jpg" alt=""></li>
-                            <li><img src="img/slides/2.jpg" alt=""></li>
-                            <li><img src="img/slides/3.jpg" alt=""></li>
-                            <li><img src="img/slides/4.jpg" alt=""></li>
-                            <li><img src="img/slides/5.jpg" alt=""></li>
-                        </ul>
+                <div class="main-val-item">
+                    <div class="game-stock-img game-img"><img src="img/thumb/3.jpg" alt=""></div>
+                    <div class="game-stock-title game-title">Death Stranding</div>
+                    <div class="game-stock-info-wrap">
+                        <div class="game-stock-date">
+                            <div class="game-stock-date-top">Steam</div>
+                            <div class="game-stock-date-bot">2020-08-28</div>
+                        </div>
+                        <div class="game-stock-info">Free Weekend</div>
+                        <div class="game-stock-but-wrap">
+                            <a href="#" class="game-stock-but">активная</a>
+                        </div>
                     </div>
-                    <div id="game-screens-carousel" class="flexslider">
-                        <ul class="slides">
-                            <li><img src="img/slides/1.jpg" alt=""></li>
-                            <li><img src="img/slides/2.jpg" alt=""></li>
-                            <li><img src="img/slides/3.jpg" alt=""></li>
-                            <li><img src="img/slides/4.jpg" alt=""></li>
-                            <li><img src="img/slides/5.jpg" alt=""></li>
-                            <li><img src="img/slides/1.jpg" alt=""></li>
-                            <li><img src="img/slides/2.jpg" alt=""></li>
-                            <li><img src="img/slides/3.jpg" alt=""></li>
-                            <li><img src="img/slides/4.jpg" alt=""></li>
-                            <li><img src="img/slides/5.jpg" alt=""></li>
-                        </ul>
+                </div>
+                <div class="main-val-item">
+                    <div class="game-stock-img game-img"><img src="img/thumb/4.jpg" alt=""></div>
+                    <div class="game-stock-title game-title">Control</div>
+                    <div class="game-stock-info-wrap">
+                        <div class="game-stock-date">
+                            <div class="game-stock-date-top">Steam</div>
+                            <div class="game-stock-date-bot">2020-08-28</div>
+                        </div>
+                        <div class="game-stock-info">Free Weekend</div>
+                        <div class="game-stock-but-wrap">
+                            <a href="#" class="game-stock-but">закончилась</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <button class="load-more-but but">Показать еще</button>
         </div>
 
         <footer class="footer">
@@ -305,8 +239,6 @@
     </div>
 </div>
 
-
-<script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
 
 </body>
 </html>
